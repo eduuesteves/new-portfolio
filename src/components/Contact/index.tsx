@@ -9,23 +9,23 @@ export function Contact() {
                         <p>Olá, gostou do meu portfólio? Gostaria de trocar alguma informação? Me chamar para algum projeto? Sanar alguma dúvida?</p>
                         <p>Vamos conversar um pouco...</p>
                         <p>Caso queira falar comigo, basta me enviar um e-mail:</p>
-                        <li>
+                        <span>
                             <Envelope size={32} weight="duotone" />
                             esteves-dorta@hotmail.com
-                        </li>
+                        </span>
                         <p>Também pode me encontrar nas seguintes redes:</p>
                         <div>
                             <a target="_blank" href="https://github.com/eduuesteves">
-                                <li>
+                                <span>
                                     <GithubLogo size={32} weight="duotone" />
                                     Github
-                                </li>
+                                </span>
                             </a>
                             <a target="_blank" href="https://www.linkedin.com/in/eduardoesteves04/">
-                                <li>
+                                <span>
                                     <LinkedinLogo size={32} weight="duotone" />
                                     Linkdin    
-                                </li>
+                                </span>
                             </a>
                         </div>
                     </div>

@@ -39,7 +39,7 @@ export function Home() {
                     </div>
                     <div className="bg-3">
                         <div className="sub-bg"></div>
-    </div>
+                    </div>
                 </div>
                 <div className="right">
                         <div className="text">

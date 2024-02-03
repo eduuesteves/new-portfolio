@@ -17,13 +17,13 @@ export function Header() {
                 <h1 className="logo">{"<"}Portfolio{" />"}</h1>
             </div>
             <div className="right">
-                <button id="Menu" onClick={() => setIsOpen(!isOpen)}>
+                <button id="Menu" title="Menu" onClick={() => setIsOpen(!isOpen)}>
                 <span>Menu</span>
                 {
                     isOpen ?
-                    <X id="Menu" size={45} color="#000" weight="bold" className="iconMenu" /> 
+                    <X size={45} color="#000" weight="bold" className="iconMenu" /> 
                     :
-                    <Hamburger id="Menu" size={45} color="#000" weight="duotone" className="iconMenu" />    
+                    <Hamburger size={45} color="#000" weight="duotone" className="iconMenu" />    
                 }
                 </button>
             </div>
