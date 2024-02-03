@@ -19,10 +19,10 @@
         align-items: center;
         justify-content: center;
         gap: 30px;
-        margin: 2rem 1rem;
+        margin: 2rem .5rem;
             
             .card {
-                width: calc(100% - 2rem);
+                width: 100%;
                 background: #131212d7;
                 display: flex;
                 flex-direction: column;
