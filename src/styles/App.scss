@@ -17,7 +17,7 @@ html {
 
 button, input, textarea {
     border: none;
-    font-family: var($inter);
+    font-family: $fire;
 }
 
 li {
@@ -32,7 +32,7 @@ h2 {
 body, #root {
     width: 100%;
     height: 100vh;
-    font-family: 'Fira Code', monospace;
+    font-family: $fire;
     scroll-behavior: smooth;
 }
 

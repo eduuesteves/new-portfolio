@@ -1,10 +1,15 @@
 import { useState } from "react";
 import { Hamburger, X } from "phosphor-react";
-import "./style.scss";
 import { Menu } from "../Menu";
 
+import "./style.scss";
+
 export function Header() {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+
+    function funcMenuOpen(state: boolean) {
+        setIsOpen(state);
+    }
     
     return (
         <header className="header">
@@ -12,7 +17,7 @@ export function Header() {
                 <h1 className="logo">{"<"}Portfolio{" />"}</h1>
             </div>
             <div className="right">
-                <button onClick={() => setIsOpen(!isOpen)}>
+                <button id="Menu" onClick={() => setIsOpen(!isOpen)}>
                 <span>Menu</span>
                 {
                     isOpen ?
@@ -22,7 +27,7 @@ export function Header() {
                 }
                 </button>
             </div>
-            <Menu open={isOpen} />
+            <Menu isOpenChildren={funcMenuOpen}  open={isOpen} />
         </header>
     )
 }

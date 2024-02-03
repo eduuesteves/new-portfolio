@@ -1,13 +1,13 @@
 import { ArrowBendDownRight, Code, PlusCircle } from "phosphor-react";
 import "./style.scss";
 
-import border from "../../assets/border.png";
-import loopstudio from "../../assets/loopstudio.png";
-import nftCard from "../../assets/nft-card.png";
-import nozbooks from "../../assets/nozbooks.png";
-import portfolioaxiosgithub from "../../assets/portfolioaxiosgithub.png";
-import random from "../../assets/random.png";
-import social from "../../assets/social.png";
+import border from "../../assets/border-min.webp";
+import loopstudio from "../../assets/loopstudio-min.webp";
+import nftCard from "../../assets/nft-card-min.webp";
+import nozbooks from "../../assets/nozbooks-min.webp";
+import portfolioaxiosgithub from "../../assets/portfolioaxiosgithub-min.webp";
+import random from "../../assets/random-min.webp";
+import social from "../../assets/social-min.webp";
 
 export function Project() {
     return (
@@ -17,9 +17,9 @@ export function Project() {
                 </div>
                 <div className="content">
                         <div className="card">
-                            <img src={portfolioaxiosgithub} alt="Portfolio Axios Github Layout" />
+                            <img loading="lazy" src={portfolioaxiosgithub} alt="Portfolio Axios Github Layout" />
                             <div>
-                                <h4>Portfólio do Github com Axios</h4>
+                                <h3>Portfólio do Github com Axios</h3>
                                 <p>Nesse projeto, utilizei a biblioteca Axios para para buscar a API do Github no usuário solicitado e retornar um portfólio com os projetos desenvolvidos pelo desenvolvedor.</p>
                                 <ul>
                                     <li>React</li>
@@ -45,9 +45,9 @@ export function Project() {
                             </div>
                         </div>
                         <div className="card">
-                            <img src={nozbooks} alt="Noz Books Layout" />
+                            <img loading="lazy" src={nozbooks} alt="Noz Books Layout" />
                             <div>
-                                <h4>Noz Books</h4>
+                                <h3>Noz Books</h3>
                                 <p>Esse é um projeto frontend que busca os dados de um backend. Durante o desenvolvimento, trabalhei com autenticação, paginação, requisição e estilização.</p>
                                 <ul>
                                     <li>React</li>
@@ -68,9 +68,9 @@ export function Project() {
                             </div>
                         </div>
                         <div className="card">
-                            <img src={random} alt="Random Layout" />
+                            <img loading="lazy" src={random} alt="Random Layout" />
                             <div>
-                                <h4>Random Colors</h4>
+                                <h3>Random Colors</h3>
                                 <p>Esse foi um dos primeiros projetos que desenvolvi utilizando Javascript, com ele comecei a ter uma noção melhor sobre o poder da linguagem no mundo web. Nesse código você irá receber algumas cores aleatórias, mas que combinam quando utilizadas juntas no layout.</p>
                                 <ul>
                                     <li>React</li>
@@ -95,9 +95,9 @@ export function Project() {
                             </div>
                         </div>
                         <div className="card">
-                            <img src={nftCard} alt="NFT Card Layout" />
+                            <img loading="lazy" src={nftCard} alt="NFT Card Layout" />
                             <div>
-                                <h4>JSEasy</h4>
+                                <h3>JSEasy</h3>
                                 <p>Com esse projeto, estou desenvolvendo uma biblioteca que agrupa a estilização CSS dentro do Javascript</p>
                                 <ul>
                                     <li>HTML</li>
@@ -121,9 +121,9 @@ export function Project() {
                             </div>
                         </div>
                         <div className="card">
-                            <img src={border} alt="Loop Studio Layout" />
+                            <img loading="lazy" src={border} alt="Loop Studio Layout" />
                             <div>
-                                <h4>Card Dynamic</h4>
+                                <h3>Card Dynamic</h3>
                                 <p>Com esse projeto você pode ter uma noção para que serve algumas estilizações no CSS. Basta mudar os valores dos inputs e automaticamente o box será alterado.</p>
                                 <ul>
                                     <li>HTML</li>
@@ -148,9 +148,9 @@ export function Project() {
                             </div>
                         </div>
                         <div className="card">
-                            <img src={loopstudio} alt="Border Layout" />
+                            <img loading="lazy" src={loopstudio} alt="Border Layout" />
                             <div>
-                                <h4>Loop Studio</h4>
+                                <h3>Loop Studio</h3>
                                 <p>Com esse projeto desenvolvi um layout utilizando o site FrontEnd Mentor, onde pude melhorar a noção de responsividade, cores, fontes e tamanho.</p>
                                 <ul>
                                     <li>React</li>
@@ -176,9 +176,9 @@ export function Project() {
                             </div>
                         </div>
                         <div className="card">
-                            <img src={social} alt="Social Layout" />
+                            <img loading="lazy" src={social} alt="Social Layout" />
                             <div>
-                                <h4>Feedback People</h4>
+                                <h3>Feedback People</h3>
                                 <p>Com esse projeto desenvolvi um layout utilizando o site FrontEnd Mentor, onde pude ter uma noção melhor de design.</p>
                                 <ul>
                                     <li>HTML</li>

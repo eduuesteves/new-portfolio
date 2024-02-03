@@ -1,4 +1,4 @@
-import { ArrowRight, Envelope, GithubLogo, LinkedinLogo } from "phosphor-react";
+import { Envelope, GithubLogo, LinkedinLogo } from "phosphor-react";
 import "./style.scss";
 
 export function Contact() {

@@ -92,11 +92,13 @@
         background: $grey-menu;
     }
 
-    li {
+    a {
         margin-left: .5rem;
         font-size: 30px;
         display: flex;
         align-items: center;
         gap: 10px;
+        background: transparent;
+        cursor: pointer;
     }
 }

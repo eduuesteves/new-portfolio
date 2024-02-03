@@ -1,7 +1,9 @@
-import { Browsers, Bug, Code, Coffee, ComputerTower, Cpu, Cursor, Database, DeviceTablet, GitBranch, Notebook, Path, Stack, TerminalWindow, TreeStructure } from "phosphor-react";
+import { Browsers, Bug, Code, Coffee, Cpu, Cursor, Database, GitBranch, Stack, TerminalWindow, TreeStructure } from "phosphor-react";
 import "./style.scss";
 
 export function About() {
+    const url = "https://avatars.githubusercontent.com/u/40532597?v=4";
+
     return (
         <section className="section-normal about-me" id="about-me">
                     <div className="title">
@@ -9,7 +11,7 @@ export function About() {
                     </div>
                     <div className="sub-about">
 
-                    <img src="https://avatars.githubusercontent.com/u/40532597?v=4" alt="Foto de perfil" className="photo" />
+                    <img loading="lazy" src={url} alt="Foto de perfil do Eduardo Esteves" className="photo" />
                     <div className="text">
                         <p>Olá, sou o Eduardo e tenho 28 anos.</p><p>Ingressei na programação web a quase 2 anos e nesse período já desenvolvi mais de {76} projetos.</p>
                         <p>Sou uma pessoa curiosa e auto didata, por isso a área web se tornou relativamente fácil para mim, pois estou sempre tentando me aperfeiçoar, reinventar e aprender maneiras seguras e performáticas de desenvolver sistemas.</p>
