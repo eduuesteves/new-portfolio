@@ -6,9 +6,9 @@ export function Contact() {
         <section className="section-contact" id="contact">
                     <h2>Contato</h2>
                     <div className="content">
-                        <p>Olá, gostou do meu portfólio? Gostaria de trocar alguma informação? Me chamar para algum projeto? Sanar alguma dúvida?</p>
+                        <p>Olá, gostou do meu portfólio? Gostaria de trocar uma ideia ou informação? Me chamar para algum projeto?</p>
                         <p>Vamos conversar um pouco...</p>
-                        <p>Caso queira falar comigo, basta me enviar um e-mail:</p>
+                        <p>Caso queira falar comigo, basta um e-mail para:</p>
                         <span>
                             <Envelope size={32} weight="duotone" />
                             esteves-dorta@hotmail.com
