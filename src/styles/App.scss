@@ -1,0 +1,46 @@
+@import "./Fonts.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+button, input, textarea {
+    border: none;
+    font-family: var($inter);
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font-family: $shrikhand;
+    font-size: 50px;
+}
+
+body, #root {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Fira Code', monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-snap-type: y mandatory;
+}
+
+.section-normal {
+    min-height: 100vh;
+    scroll-snap-align: start;
+}

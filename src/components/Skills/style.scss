@@ -1,0 +1,176 @@
+@import "../../styles/Colors.scss";
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 2rem 2rem;
+
+    h2 {
+        color: $green;
+        text-shadow: 1px 1px 0 $black;
+    }
+
+
+    .skills-text {
+        font-size: 20px;
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .content {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        
+        .card {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 180px;
+            text-align: center;
+            padding: 0 1rem;
+            border-radius: 10px;
+            background: #6c6c6c;
+            border: 2px solid black;
+            transition: .2s linear;
+
+            // &:hover {
+            //     transform: scale(1.3);
+            //     box-shadow: 5px 5px 5px #7d0000;
+            //     background: #a4a4a4;
+            // }
+
+            .colors {
+                width: 100%;
+                display: flex;
+                align-items: flex-start;
+                gap: 5px;
+                margin: 10px 0 20px;
+
+                div {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                }
+
+                .red {
+                    background: red;
+                }
+                .yellow {
+                    background: rgb(251, 255, 0);
+                }
+                .green {
+                    background: rgb(0, 211, 46);
+                }
+            }
+
+            .sub-card {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            strong {
+                width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                padding: .5rem 0;
+                border-radius: 15px;
+                margin-bottom: 1rem;
+                cursor: context-menu;
+                background: $black-transparent;
+            }
+
+            p {
+                flex: 1;
+                cursor: context-menu;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .skills {
+        .content {
+            display: grid;
+            grid-template-areas: 
+            "one two three" 
+            "one four five"
+            "six eight five"
+            "six eight five"
+            "six seven seven"
+            "nine seven seven"
+            "nine ten eleven"
+            "twelve ten thirteen"
+            "fourteen fifteen thirteen";
+
+            
+
+            .card {
+                height: auto;
+                padding: 1rem 1rem 2rem;
+
+                &:nth-child(1) {
+                    grid-area: one;
+                }
+                &:nth-child(2) {
+                    grid-area: two;
+                }
+                &:nth-child(3) {
+                    grid-area: three;
+                }
+                &:nth-child(4) {
+                    grid-area: four;
+                }
+                &:nth-child(5) {
+                    grid-area: five;
+                }
+                &:nth-child(6) {
+                    grid-area: six;
+                }
+                &:nth-child(7) {
+                    grid-area: seven;
+                }
+                &:nth-child(8) {
+                    grid-area: eight;
+                }
+                &:nth-child(9) {
+                    grid-area: nine;
+                }
+                &:nth-child(10) {
+                    grid-area: ten;
+                }
+                &:nth-child(11) {
+                    grid-area: eleven;
+                }
+                &:nth-child(12) {
+                    grid-area: twelve;
+                }
+                &:nth-child(13) {
+                    grid-area: thirteen;
+                }
+                &:nth-child(14) {
+                    grid-area: fourteen;
+                }
+                &:nth-child(15) {
+                    grid-area: fifteen;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .skills {
+        .content {
+            width: 900px;
+        }
+    }
+}

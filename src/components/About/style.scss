@@ -1,0 +1,105 @@
+@import "../../styles/Colors.scss";
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    background: $red;
+    padding: 120px 2rem 2rem;
+
+    h2 {
+        color: $green;
+        margin-bottom: 4rem;
+        text-shadow: 1px 1px 0 $white;
+    }
+
+    .sub-about {
+        padding: 2rem 1rem 1rem;
+        background: $black-transparent;
+        border-radius: 20px;
+        box-shadow: 0 0 2px $black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .text {
+        margin: 3rem 0;
+        font-size: 17px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: #fff;
+
+        p {
+            line-height: 1.5;
+        }
+
+    }
+
+    .icons {
+        display: flex;
+        gap: 15px;
+        background: $black-transparent;
+        justify-content: space-between;
+        border-radius: 15px;
+        padding: 1rem;
+        flex-wrap: wrap;
+
+        button {
+            display: flex;
+            gap: 10px;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            padding: .3rem 1rem;
+            border-radius: 10px;
+        }
+    }
+
+    .photo {
+        border: 5px solid #fff;
+        border-radius: 50%;
+        width: min(400px, 100%);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .about-me {
+        align-items: center;
+
+        .sub-about {
+            padding: 2rem;
+        }
+
+        .text {
+            width: 600px;
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        .icons {
+            width: 600px;
+
+            svg {
+                transition: .3s linear color;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+
+        button {
+            transition: .4s linear;
+
+            &:hover {
+                background: $black;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+}

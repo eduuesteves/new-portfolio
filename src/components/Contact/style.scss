@@ -1,0 +1,70 @@
+@import "../../styles/Colors.scss";
+
+.section-contact {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px;
+    background: $contact;
+    scroll-snap-align: start;
+    padding: 120px 2rem 2rem;
+
+    h2 {
+        text-shadow: 1px 1px 0 $white;
+        color: $text;
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: min(500px, 100%);
+        padding: 1rem;
+        margin: 3rem 0;
+        text-align: justify;
+        
+        p {
+            font-size: 18px;
+            color: $white;
+            cursor: default;
+            line-height: 1.7;
+
+            &:nth-child(4) {
+                margin-top: 3rem;
+            }
+        }
+
+        li {
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: $black-transparent;
+            padding: .5rem 1rem;
+            border-radius: 15px;
+            transition: .3s linear;
+            
+            &:nth-child(1) {
+                cursor: pointer;
+            }
+
+            &:nth-child(2) {
+                cursor: pointer;
+            }
+
+            &:hover {
+                color: $white;
+                background: $text;
+            }
+        }
+
+        > div {
+            display: flex;
+            gap: 30px;
+        }
+
+    }
+}
