@@ -5,12 +5,10 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 120px;
     background: $contact;
     scroll-snap-align: start;
-    padding: 120px 2rem 2rem;
 
     h2 {
         text-shadow: 1px 1px 0 $white;
@@ -23,7 +21,6 @@
         flex-direction: column;
         width: min(500px, 100%);
         padding: 1rem;
-        margin: 5rem 0;
         text-align: justify;
         
         p {
