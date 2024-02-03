@@ -114,7 +114,7 @@
 
             p {
                 font-size: 21px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: $white;
 
                 &:nth-child(2) {
                     margin-bottom: 2rem;
@@ -149,12 +149,10 @@
                 cursor: pointer;
                 transition: .2s linear;
                 box-shadow: 3px 3px 0 $black;
-                background: #333;
-                color: #fff;
-
+                
                 &:hover {
-                    box-shadow: 3px 3px 0 $white;
-                    opacity: .9;
+                    background: #333;
+                    color: #fff;
                 }
 
                 .img-social {
@@ -350,14 +348,14 @@
                 position: relative;
                 animation: text 3s;
                 left: -11vw;
-
+                
                 &:after {
                     content: "";
                     position: absolute;
                     top: -5px;
                     left: -5px;
                     width: 300px;
-                    height: 316px;
+                    height: 321px;
                     border-radius: 20px;
                     animation: shadow 6s linear infinite;
                 }
