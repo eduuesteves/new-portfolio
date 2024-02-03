@@ -21,9 +21,9 @@ export function Header() {
                 <span>Menu</span>
                 {
                     isOpen ?
-                    <X size={45} color="#000" weight="bold" className="iconMenu" /> 
+                    <X id="Menu" size={45} color="#000" weight="bold" className="iconMenu" /> 
                     :
-                    <Hamburger size={45} color="#000" weight="duotone" className="iconMenu" />    
+                    <Hamburger id="Menu" size={45} color="#000" weight="duotone" className="iconMenu" />    
                 }
                 </button>
             </div>
