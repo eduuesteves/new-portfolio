@@ -10,7 +10,7 @@ export function Home() {
                         <p>Seja Bem Vindo{"("}a{")"}!</p>
                         <p>Me chamo,</p>
                         <strong>Eduardo Esteves</strong>
-                        <p className="sub-text">Aqui você verá um pouco mais dos projetos que desenvolvi durante minha tragetória no desenvolvimento web.</p>
+                        <p className="sub-text">Aqui você verá um pouco mais dos projetos que desenvolvi durante minha trajetória no desenvolvimento web.</p>
                     </div>
                     <div className="social">
                         <a target="_blank" href="https://github.com/eduuesteves">
